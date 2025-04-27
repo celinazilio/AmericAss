@@ -1,151 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>America's Ass - Universo Marvel</title>
-  <link rel="stylesheet" href="estilos/estilos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Sitio</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
 
-  <header>
-    <nav>
-      <ul class="menu">
-        <li class="logo"><a href="#">America's Ass</a></li>
-        <li class="item"><a href="#Inicio">Inicio</a></li>
-        <li class="item"><a href="#Films">Filmografía</a></li>
-        <li class="item"><a href="#Videos">Videos</a></li>
-        <li class="item"><a href="#Trending">Trending</a></li>
-        <li class="item"><a href="#Comics">Cómics</a></li>
-        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+<header class="header">
+  <div class="container">
+    <div class="logo">MiSitio</div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section id="Inicio" class="hero">
-    <h1>Eso es lo que hacen los héroes</h1>
-    <p>Bienvenido a "America's Ass", tu sitio dedicado al Universo Cinematográfico de Marvel. ¡Descubrí noticias, próximos estrenos y mucho más!</p>
-  </section>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Bienvenido a Nuestro Mundo</h1>
+    <p>Descubrí nuevas experiencias, ideas y proyectos.</p>
+    <a href="#" class="btn">Explorar</a>
+  </div>
+</section>
 
-  <section class="news">
-    <ul class="card-list">
-      <li class="card">
-        <a href="#" class="card-image">
-          <img src="https://www.cinemascomics.com/wp-content/uploads/2020/10/Robert-Downey-Jr-causo-muchos-problemas-a-Marvel-Studios-960x720.jpg.webp" alt="Robert Downey Jr en Marvel Studios">
-        </a>
-        <div class="card-description">
-          <h3>Robert Downey Jr causó muchos problemas a Marvel Studios</h3>
-          <p>Su camino como Iron Man no fue fácil, ¡enterate por qué!</p>
-        </div>
-      </li>
+<section class="news">
+  <h2>Noticias</h2>
+  <div class="card-list">
+    <article class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Noticia 1">
+      </div>
+      <div class="card-description">
+        <h3>Nuevos Horizontes</h3>
+        <p>Exploramos caminos inexplorados para crecer juntos.</p>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600" alt="Noticia 2">
+      </div>
+      <div class="card-description">
+        <h3>Creatividad sin Límites</h3>
+        <p>Ideas frescas que impulsan cambios reales en el mundo.</p>
+      </div>
+    </article>
+    
+    <article class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=600" alt="Noticia 3">
+      </div>
+      <div class="card-description">
+        <h3>Innovación y Futuro</h3>
+        <p>Conectamos la tecnología con las personas para crear futuro.</p>
+      </div>
+    </article>
+  </div>
+</section>
 
-      <li class="card">
-        <a href="#" class="card-image">
-          <img src="https://www.cinemascomics.com/wp-content/uploads/2020/10/amigo-peter-parker-villano-marvel-studios-960x720.jpg.webp" alt="Amigo de Peter Parker que será villano">
-        </a>
-        <div class="card-description">
-          <h3>Un amigo de Spider-Man se volverá villano</h3>
-          <p>Un giro inesperado en el MCU para un personaje muy querido.</p>
-        </div>
-      </li>
+<footer class="footer">
+  <p>© 2025 MiSitio. Todos los derechos reservados.</p>
+</footer>
 
-      <li class="card">
-        <a href="#" class="card-image">
-          <img src="https://www.cinemascomics.com/wp-content/uploads/2020/10/spider-man-Tobey-Maguire-y-Andrew-Garfield-960x720.jpg.webp" alt="Tobey Maguire y Andrew Garfield en Spider-Man 3">
-        </a>
-        <div class="card-description">
-          <h3>¡Tobey Maguire y Andrew Garfield vuelven en Spider-Man 3!</h3>
-          <p>¡El multiverso se abre paso en la nueva película de Spider-Man!</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <section id="Films" class="films">
-    <h2>Filmografía del Universo Marvel</h2>
-    <div class="phases">
-      <article>
-        <h3>Fase 1</h3>
-        <ul>
-          <li><strong>Iron Man</strong> (2008)</li>
-          <li><strong>The Incredible Hulk</strong> (2008)</li>
-          <li><strong>Thor</strong> (2011)</li>
-          <li><strong>Captain America: The First Avenger</strong> (2011)</li>
-          <li><strong>The Avengers</strong> (2012)</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Fase 2</h3>
-        <ul>
-          <li><strong>Iron Man 3</strong> (2013)</li>
-          <li><strong>Thor: The Dark World</strong> (2013)</li>
-          <li><strong>Guardians of the Galaxy</strong> (2014)</li>
-          <li><strong>Avengers: Age of Ultron</strong> (2015)</li>
-          <li><strong>Ant-Man</strong> (2015)</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Fase 3</h3>
-        <ul>
-          <li><strong>Captain America: Civil War</strong> (2016)</li>
-          <li><strong>Doctor Strange</strong> (2016)</li>
-          <li><strong>Avengers: Infinity War</strong> (2018)</li>
-          <li><strong>Spider-Man: Far From Home</strong> (2019)</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section id="Videos" class="video">
-    <h2>Videos destacados</h2>
-    <iframe width="700" height="400" src="https://www.youtube.com/embed/kA2XAS_LR-o" frameborder="0" allowfullscreen></iframe>
-  </section>
-
-  <section id="Trending" class="gallery">
-    <h2>Trending en el Universo Marvel</h2>
-    <div class="gallery-grid">
-      <img src="https://images.alphacoders.com/910/910510.jpg" alt="Imagen Marvel 1">
-      <img src="https://images7.alphacoders.com/101/thumb-1920-1017531.jpg" alt="Imagen Marvel 2">
-      <img src="https://images.alphacoders.com/820/820543.jpg" alt="Imagen Marvel 3">
-      <img src="https://images4.alphacoders.com/877/877454.jpg" alt="Imagen Marvel 4">
-    </div>
-  </section>
-
-  <section id="Comics" class="comics">
-    <h2>Cómics más vendidos</h2>
-    <div class="comics-grid">
-      <figure>
-        <img src="img/portrait_uncanny%20(2).jpg" alt="X-Men Comic">
-        <figcaption>X of Swords'! X-MEN #14</figcaption>
-      </figure>
-      <figure>
-        <img src="img/portrait_uncanny%20(3).jpg" alt="Avengers Comic">
-        <figcaption>True Believers: Black Widow</figcaption>
-      </figure>
-      <figure>
-        <img src="img/portrait_uncanny%20(4).jpg" alt="Spider-Man Comic">
-        <figcaption>Amazing Spider-Man Vol 1 #86</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <footer>
-    <div class="social-links">
-      <a href="https://www.facebook.com/MarvelLatinoamerica" class="fa-brands fa-facebook"></a>
-      <a href="https://twitter.com/marvel" class="fa-brands fa-twitter"></a>
-      <a href="https://www.instagram.com/marvelstudios/" class="fa-brands fa-instagram"></a>
-    </div>
-  </footer>
-
-  <script src="js/cards.js"></script>
-
+<script src="script.js"></script>
 </body>
-
 </html>
