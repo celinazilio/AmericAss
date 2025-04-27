@@ -1,103 +1,118 @@
-/* Reset general */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base */
+/* General */
 body {
-  font-family: 'Oswald', sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
+  color: #333;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
-ul {
-  list-style: none;
+/* Header */
+.header {
+  background: #222;
+  padding: 1rem 0;
 }
 
-/* Header y Nav */
-header {
-  background: #20232a;
-  padding: 10px 0;
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
-nav .menu {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
-  flex-wrap: wrap;
 }
 
-.menu .logo a {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #61dafb;
+.nav-list {
+  list-style: none;
+  display: flex;
 }
 
-.menu .item a {
-  padding: 10px 15px;
-  display: block;
-  color: white;
-  transition: background 0.3s;
+.nav-list li {
+  margin-left: 1.5rem;
 }
 
-.menu .item a:hover {
-  background: #61dafb;
-  color: #20232a;
-  border-radius: 5px;
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-.menu .toggle {
+/* Hamburguesa */
+.menu-toggle {
   display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-  background: url('https://images.unsplash.com/photo-1522120690040-42e3c2198e3d') no-repeat center center/cover;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600') no-repeat center center/cover;
   height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  color: white;
-  padding: 0 20px;
+  color: #fff;
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 3rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
-.hero p {
+.hero-content p {
   font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-/* News Cards */
+.btn {
+  background: #ff7f50;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff5722;
+}
+
+/* News Section */
 .news {
-  padding: 40px 5%;
+  padding: 4rem 0;
+  background: #f8f8f8;
+  text-align: center;
 }
 
 .card-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 2rem;
 }
 
 .card {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
@@ -111,168 +126,40 @@ nav .menu {
 }
 
 .card-description {
-  padding: 20px;
+  padding: 1rem;
 }
 
 .card-description h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.card-description p {
-  font-size: 1rem;
-  color: #666;
-}
-
-/* Films Section */
-.films {
-  background: #fff;
-  padding: 50px 5%;
-}
-
-.films h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.phases {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.phases article h3 {
-  margin-bottom: 10px;
-  color: #20232a;
-}
-
-.phases ul li {
-  padding: 5px 0;
-}
-
-/* Videos Section */
-.video {
-  padding: 50px 5%;
-  background: #f0f0f0;
-  text-align: center;
-}
-
-.video iframe {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-/* Gallery */
-.gallery {
-  padding: 50px 5%;
-  background: white;
-}
-
-.gallery h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
-}
-
-/* Comics Section */
-.comics {
-  padding: 50px 5%;
-  background: #f9f9f9;
-}
-
-.comics h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.comics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.comics-grid figure {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.comics-grid img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-}
-
-.comics-grid figcaption {
-  padding: 10px;
-  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
-footer {
-  background: #20232a;
-  padding: 20px 5%;
+.footer {
+  background: #222;
+  color: #bbb;
   text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
 }
 
-.social-links a {
-  margin: 0 10px;
-  font-size: 1.5rem;
-  color: white;
-  transition: color 0.3s;
-}
-
-.social-links a:hover {
-  color: #61dafb;
-}
-
-/* Responsive Menu */
+/* Responsive */
 @media (max-width: 768px) {
-  .menu .item {
+  .nav-list {
     display: none;
-    width: 100%;
-    text-align: center;
-    background: #20232a;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
   }
 
-  .menu .item.active {
-    display: block;
+  .nav-list.active {
+    display: flex;
   }
 
-  .menu .toggle {
+  .menu-toggle {
     display: block;
-    cursor: pointer;
-    font-size: 1.8rem;
-    color: white;
   }
 }
-Extra (para que funcione el menú responsive):
-En tu js/cards.js deberías agregar este pequeño script para hacer que el botón de menú (hamburguesa) funcione:
 
-javascript
-Copiar
-Editar
-$(document).ready(function() {
-  $(".toggle").click(function() {
-    $(".item").toggleClass("active");
-  });
-});
